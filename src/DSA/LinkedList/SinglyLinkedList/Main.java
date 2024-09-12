@@ -1,7 +1,7 @@
-package DSA.LinkedList;
+package DSA.LinkedList.SinglyLinkedList;
 
 
-import java.util.LinkedList;
+import DSA.LinkedList.SinglyLinkedList.CustomLL;
 
 public class Main {
     public static void main(String[] args) {
@@ -34,7 +34,7 @@ public class Main {
         list.DeleteAtIndex(2);
         list.displayAll();
         System.out.println(list.getSize());
-
+        System.out.println(list.find(12));
         CustomLL list2 = new CustomLL();
 
         list2.insertFirst(1);

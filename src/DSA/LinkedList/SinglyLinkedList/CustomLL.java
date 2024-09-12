@@ -1,4 +1,4 @@
-package DSA.LinkedList;
+package DSA.LinkedList.SinglyLinkedList;
 
 public class CustomLL {
 
@@ -134,6 +134,18 @@ public class CustomLL {
         this.size--;
     }
 
+    public int find(int value){
+        Node temp = head;
+        int index = 0;
+        while(temp.next !=null){
+
+            if(temp.value == value) return index;
+            temp = temp.next;
+            index++;
+        }
+        return -1;
+
+    }
 
 
 
