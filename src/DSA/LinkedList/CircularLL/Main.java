@@ -12,7 +12,7 @@ public class Main {
         list.insertFirst(6);
         list.displayAll();
         System.out.println(list.getSize());
-        list.delete(1);
+        list.delete(6);
         list.displayAll();
         System.out.println(list.getSize());
     }

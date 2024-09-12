@@ -25,10 +25,11 @@ public class CustomCLL {
     public void delete(int value){
 
         Node temp = head;
-         if(head.value==value){
+         if(temp.value==value){
              head = head.next;
-             tail = head;
+             tail.next = head;
              size--;
+             return;
          }
 
          while(temp.next.value != value){
